@@ -1,5 +1,5 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav
+<!--  <mat-sidenav
     #drawer
     class="sidenav"
     fixedInViewport="true"
@@ -12,7 +12,7 @@
       <a mat-list-item href="#">Link 2</a>
       <a mat-list-item href="#">Link 3</a>
     </mat-nav-list>
-  </mat-sidenav>
+  </mat-sidenav>-->
   <mat-sidenav-content>
     <mat-toolbar color="primary">
       <button
@@ -23,7 +23,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Application Title</span>
+      <img class="navabr-logo" src="../../assets/img/spotify-turnover-logo-full.svg"/>
     </mat-toolbar>
   </mat-sidenav-content>
 </mat-sidenav-container>

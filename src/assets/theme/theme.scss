@@ -1,0 +1,123 @@
+@import '~@angular/material/theming';
+@import "variables";
+@include mat-core();
+
+$color-black-map: (
+  50: $color-black,
+  100: $color-black,
+  200: $color-black,
+  300: $color-black,
+  400: $color-black,
+  500: $color-black,
+  600: $color-black,
+  700: $color-black,
+  800: $color-black,
+  900: $color-black,
+  A100: $color-black,
+  A200: $color-black,
+  A400: $color-black,
+  A700: $color-black,
+  contrast: (
+    50: white,
+    100: white,
+    200: white,
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: white,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+$color-green-map: (
+  50: $color-green,
+  100: $color-green,
+  200: $color-green,
+  300: $color-green,
+  400: $color-green,
+  500: $color-green,
+  600: $color-green,
+  700: $color-green,
+  800: $color-green,
+  900: $color-green,
+  A100: $color-green,
+  A200: $color-green,
+  A400: $color-green,
+  A700: $color-green,
+  contrast: (
+    50: white,
+    100: white,
+    200: white,
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: white,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+$color-red-map: (
+  50: $color-red,
+  100: $color-red,
+  200: $color-red,
+  300: $color-red,
+  400: $color-red,
+  500: $color-red,
+  600: $color-red,
+  700: $color-red,
+  800: $color-red,
+  900: $color-red,
+  A100: $color-red,
+  A200: $color-red,
+  A400: $color-red,
+  A700: $color-red,
+  contrast: (
+    50: white,
+    100: white,
+    200: white,
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: white,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+$my-app-primary: mat-palette($color-black-map);
+$my-app-accent:  mat-palette($color-green-map);
+$my-app-warn:    mat-palette($color-red-map);
+
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+
+@include angular-material-theme($my-app-theme);
+
+
+body, html {
+  background: $color-dark-grey;
+  color: $color-white;
+  padding: 0;
+  margin: 0;
+
+  a, a:focus, a:visited, a:hover {
+    color: $color-green;
+    text-decoration: none;
+  }
+}
