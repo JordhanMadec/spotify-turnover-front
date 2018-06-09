@@ -121,6 +121,21 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-title;
 }
 
+h1 {
+  font-size: 35px;
+  margin: $vertical-gap-big 0;
+}
+
+h2 {
+  font-size: 30px;
+  margin: $vertical-gap-big 0;
+}
+
+h3 {
+  font-size: $font-big-size;
+  margin: $vertical-gap-big 0;
+}
+
 input[type="text"],
 input[type="password"] {
   border: none;
