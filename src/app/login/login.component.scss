@@ -1,0 +1,53 @@
+@import "../../assets/theme/variables";
+
+section#login-section {
+  height: 100%;
+  background-image: url("../../assets/img/background/background3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.login-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-card {
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  width: 350px;
+
+  .login-logo-spotify {
+    height: 50px;
+    margin-bottom: $vertical-gap-big;
+  }
+
+  .login-card-message {
+    margin-bottom: $vertical-gap-big;
+  }
+
+  .login-button {
+    margin-top: $vertical-gap-small;
+  }
+}
+
+.slogan {
+  font-size: 80px;
+  font-family: $font-title;
+  text-align: right;
+  text-shadow: 2px 2px 10px $color-black;
+
+  .slogan-subtitle {
+    font-size: $font-big-size;
+  }
+}
+
+.signup-message {
+  color: $color-light-grey;
+  margin-top: $vertical-gap-very-big;
+  text-align: left;
+}

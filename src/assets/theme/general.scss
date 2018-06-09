@@ -1,5 +1,72 @@
 @import "variables";
 
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  padding-top: 64px;
+}
+
+a, a:focus, a:visited, a:hover {
+  color: $color-green;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .center {
   text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.card {
+  display: flex;
+  background: $color-white;
+  color: $color-black;
+  padding: $vertical-gap-big $horizontal-gap-big;
+  border-radius: $radius-large;
+  margin: $vertical-gap-big 0;
+}
+
+.green {
+  color: $color-green;
+}
+
+.black {
+  color: $color-black;
+}
+
+.red {
+  color: $color-red;
+}
+
+.dark-gray {
+  color: $color-dark-grey;
+}
+
+.light-gray {
+  color: $color-light-grey;
+}
+
+.big-text {
+  font-size: $font-big-size;
+}
+
+.medium-text {
+  font-size: $font-medium-size;
+}
+
+.small-text {
+  font-size: $font-small-size;
 }
