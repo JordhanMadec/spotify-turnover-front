@@ -17,6 +17,7 @@ section#home-section {
   align-content: center;
   justify-content: center;
   width: 350px;
+  margin: 0 $horizontal-gap-big;
 }
 
 .listen-button {
@@ -33,4 +34,10 @@ section#home-section {
 
   // Should already be centered but it's not...
   margin: 0 auto;
+}
+
+.artist-navigation-button {
+  .svg-arrow path {
+    fill: $color-green;
+  }
 }

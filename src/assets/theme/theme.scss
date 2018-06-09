@@ -167,5 +167,25 @@ input[type="password"] {
 .my-action-button {
   color: $color-white !important;
   background-image: linear-gradient(to right, $color-green, $color-green 50%, $color-dark-green 50%, $color-dark-green);
+}
 
+.circle-button {
+  height: 50px;
+  width: 50px;
+  box-sizing: content-box;
+  border-radius: 100%;
+  padding: 0;
+  margin: 0 $vertical-gap-small;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-white;
+  color: $color-green;
+  transition: .3s;
+
+  &:hover {
+    margin: 0;
+    padding: $vertical-gap-small;
+  }
 }
