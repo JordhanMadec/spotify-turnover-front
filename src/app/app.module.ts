@@ -9,6 +9,9 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
 import { LoginComponent } from './login/login.component';
 import {RouterModule, Routes} from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { FollowedArtistsComponent } from './followed-artists/followed-artists.component';
+import { PreviousArtistsComponent } from './recent-artists/recent-artists.component';
+import { SuggestedArtistComponent } from './suggested-artist/suggested-artist.component';
 
 export const appRoutes: Routes = [
   {
@@ -31,7 +34,10 @@ export const appRoutes: Routes = [
     AppComponent,
     NavbarComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    FollowedArtistsComponent,
+    PreviousArtistsComponent,
+    SuggestedArtistComponent
   ],
   imports: [
     BrowserModule,

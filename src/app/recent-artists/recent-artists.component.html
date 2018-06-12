@@ -1,0 +1,18 @@
+<section id="recent-artists-section">
+  <div class="container recent-artists-container">
+
+    <h1>Recently played</h1>
+
+    <div class="recent-artists-row horizontal-scroll-wrapper">
+
+      <div class="recent-artist center" *ngFor="let artist of recentArtists">
+        <div class="circle recent-artist-picture">
+          <div class="circle play-recent-button"><img src="../../assets/img/icons/play.svg"></div>
+        </div>
+        <h4 class="recent-artist-name">Kanye West</h4>
+      </div>
+
+    </div>
+
+  </div>
+</section>

@@ -123,17 +123,17 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 35px;
-  margin: $vertical-gap-big 0;
+  margin: $gap-medium 0;
 }
 
 h2 {
   font-size: 30px;
-  margin: $vertical-gap-big 0;
+  margin: $gap-medium 0;
 }
 
 h3 {
   font-size: $font-big-size;
-  margin: $vertical-gap-big 0;
+  margin: $gap-medium 0;
 }
 
 input[type="text"],
@@ -141,8 +141,8 @@ input[type="password"] {
   border: none;
   background: $color-light-grey;
   border-radius: $radius-small;
-  padding: $vertical-gap-small;
-  margin-bottom: $vertical-gap-small;
+  padding: $gap-very-small;
+  margin-bottom: $gap-very-small;
   font-size: $font-medium-size;
 }
 
@@ -150,13 +150,13 @@ input[type="password"] {
   display: inline-block;
   outline: none;
   border: none;
-  padding: $vertical-gap-small $horizontal-gap-big;
+  padding: $gap-very-small $gap-big;
   font-size: $font-medium-size;
   border-radius: 50px;
   cursor: pointer;
   background-image: linear-gradient(to right, $color-light-grey, $color-light-grey 50%, $color-black 50%, $color-black);
   background-size: 200% 100%;
-  transition: background-position .5s;
+  transition: background-position $transition-slow;
 
   &:hover {
     color: $color-green;
@@ -175,17 +175,17 @@ input[type="password"] {
   box-sizing: content-box;
   border-radius: 100%;
   padding: 0;
-  margin: 0 $vertical-gap-small;
+  margin: 0 $gap-very-small;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: $color-white;
   color: $color-green;
-  transition: .3s;
+  transition: $transition-fast;
 
   &:hover {
     margin: 0;
-    padding: $vertical-gap-small;
+    padding: $gap-very-small;
   }
 }

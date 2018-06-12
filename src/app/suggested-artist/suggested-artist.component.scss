@@ -1,0 +1,44 @@
+@import "../../assets/theme/variables";
+
+section#suggested-artist-section {
+  display: flex;
+  margin: $gap-very-big auto;
+}
+
+.suggested-artist-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.artist-card {
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 350px;
+  margin: 0 $gap-big;
+}
+
+.listen-button {
+  margin-top: $gap-very-small;
+}
+
+.artist-picture {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  background-image: url("../../assets/img/kanye.jpg");
+  background-size: cover;
+  background-position: center;
+
+  // Should already be centered but it's not...
+  margin: 0 auto;
+}
+
+.artist-navigation-button {
+  .svg-arrow path {
+    fill: $color-green;
+}
+}

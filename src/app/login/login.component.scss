@@ -23,15 +23,15 @@ section#login-section {
 
   .login-logo-spotify {
     height: 50px;
-    margin-bottom: $vertical-gap-big;
+    margin-bottom: $gap-big;
   }
 
   .login-card-message {
-    margin-bottom: $vertical-gap-big;
+    margin-bottom: $gap-big;
   }
 
   .login-button {
-    margin-top: $vertical-gap-small;
+    margin-top: $gap-very-small;
   }
 }
 
@@ -48,6 +48,6 @@ section#login-section {
 
 .signup-message {
   color: $color-light-grey;
-  margin-top: $vertical-gap-very-big;
+  margin-top: $gap-big;
   text-align: left;
 }
