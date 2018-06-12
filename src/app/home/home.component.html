@@ -1,5 +1,18 @@
 <div class="home-container">
-  <app-suggested-artist></app-suggested-artist>
 
-  <app-recent-artists></app-recent-artists>
+  <div class="container center panel-controller">
+    <div class="panel-controller-button" [class.selected]="selectePanel" (click)="switchPanel()">Suggested</div>
+    <div class="panel-controller-button" [class.selected]="!selectePanel" (click)="switchPanel()">Followed</div>
+  </div>
+
+  <div id="home-panel-1" class="home-panel" [class.selected]="selectePanel">
+    <app-suggested-artist></app-suggested-artist>
+
+    <app-recent-artists></app-recent-artists>
+  </div>
+
+  <div id="home-panel-2" class="home-panel" [class.selected]="!selectePanel">
+    <app-followed-artists></app-followed-artists>
+  </div>
+
 </div>

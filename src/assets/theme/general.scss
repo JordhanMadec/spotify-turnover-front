@@ -9,6 +9,11 @@ body, html {
 
 html {
   padding-top: 64px;
+
+  &::-webkit-scrollbar {
+    // Scrollbar not visible
+    display: none;
+  }
 }
 
 a, a:focus, a:visited, a:hover {

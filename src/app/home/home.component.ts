@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  private selectePanel = true;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public switchPanel() {
+    this.selectePanel = !this.selectePanel;
   }
 
 }

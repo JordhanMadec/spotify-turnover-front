@@ -1,5 +1,56 @@
 @import "../../assets/theme/variables";
 
 .home-container {
-  height: 100%
+  height: 100%;
+  padding-top: $gap-big;
+}
+
+.panel-controller-button {
+  display: inline-block;
+  font-size: $font-medium-size;
+  font-family: $font-title;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0 $gap-very-small;
+  transition: $transition-fast;
+
+  &:hover {
+    color: $color-green;
+  }
+
+  &.selected {
+    color: $color-green;
+
+    &::after {
+      content: "";
+      display: block;
+      background-color: $color-green;
+      height: 5px;
+      width: 5px;
+      border-radius: 100%;
+      margin-left: 50%;
+      margin-top: 3px;
+    }
+  }
+}
+
+.home-panel {
+  opacity: 0;
+  width: 0;
+  transition: $transition-fast;
+
+  &#home-panel-1 {
+    transform: translate(-100%);
+  }
+
+  &#home-panel-2 {
+    transform: translate(100%);
+  }
+
+  &.selected {
+    opacity: 1;
+    width: 100%;
+    transform: translate(0) !important;
+  }
 }
