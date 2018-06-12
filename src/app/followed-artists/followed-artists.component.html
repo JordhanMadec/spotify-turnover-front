@@ -1,3 +1,18 @@
-<p>
-  followed-artists works!
-</p>
+<section id="followed-artists-section">
+  <div class="container followed-artists-container">
+
+    <h1>Followed artists</h1>
+
+    <div class="followed-artists-row">
+
+      <div class="followed-artist center" *ngFor="let artist of followedArtists">
+        <div class="circle followed-artist-picture">
+          <div class="circle play-followed-button"><img src="../../assets/img/icons/play.svg"></div>
+        </div>
+        <h4 class="followed-artist-name">Kanye West</h4>
+      </div>
+
+    </div>
+
+  </div>
+</section>
