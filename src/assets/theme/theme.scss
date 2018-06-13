@@ -154,7 +154,8 @@ input[type="password"] {
   font-size: $font-medium-size;
   border-radius: 50px;
   cursor: pointer;
-  background-image: linear-gradient(to right, $color-light-grey, $color-light-grey 50%, $color-black 50%, $color-black);
+  background-image: linear-gradient(to right, $color-white, $color-white 50%, $color-black 50%, $color-black);
+  color: $color-black;
   background-size: 200% 100%;
   transition: background-position $transition-slow;
 

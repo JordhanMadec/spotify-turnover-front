@@ -18,3 +18,19 @@
   </div>
 
 </div>
+
+
+
+
+
+<div class="cookie-message-container card mat-elevation-z20" [class.visible]="!acceptsCookies">
+
+  <div class="cookie-message-text">
+    This website uses cookies to enhance your experience.
+    By continuing to visit it, you agree to our use of cookies.
+  </div>
+
+  <div class="center">
+    <div class="my-button cookie-message-button" (click)="acceptCookies()">OK</div>
+  </div>
+</div>

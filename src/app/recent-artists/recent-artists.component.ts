@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PreviousArtistsComponent implements OnInit {
 
-  private recentArtists = [1, 1, 1, 1, 1, 1, 1, 1, 1];
+  private recentArtists = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
   constructor() { }
 

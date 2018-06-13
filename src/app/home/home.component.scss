@@ -3,6 +3,7 @@
 .home-container {
   height: 100%;
   padding-top: $gap-big;
+  overflow-x: hidden;
 }
 
 .panel-controller-button {
@@ -57,4 +58,30 @@
     width: 100%;
     transform: translate(0) !important;
   }
+}
+
+
+
+
+// Cookie message
+
+.cookie-message-container {
+  position: fixed;
+  bottom: $gap-small;
+  right: $gap-medium;
+  background-color: $color-green;
+  color: $color-white;
+  width: 350px;
+  flex-direction: column;
+  transform: translate(0, 200%);
+  transition: $transition-fast;
+
+  &.visible {
+    transform: translate(0, 0);
+    transition: $transition-slow;
+  }
+}
+
+.cookie-message-button {
+  margin-top: $gap-medium;
 }

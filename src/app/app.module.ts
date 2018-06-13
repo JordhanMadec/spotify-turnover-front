@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { FollowedArtistsComponent } from './followed-artists/followed-artists.component';
 import { PreviousArtistsComponent } from './recent-artists/recent-artists.component';
 import { SuggestedArtistComponent } from './suggested-artist/suggested-artist.component';
+import {CookieService} from "angular2-cookie/core";
 
 export const appRoutes: Routes = [
   {
@@ -51,7 +52,7 @@ export const appRoutes: Routes = [
     RouterModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
