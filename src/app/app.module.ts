@@ -5,7 +5,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import {
+  MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule,
+  MatSlideToggle, MatSlideToggleModule
+} from '@angular/material';
 import { LoginComponent } from './login/login.component';
 import {RouterModule, Routes} from '@angular/router';
 import { HomeComponent } from './home/home.component';
@@ -49,6 +52,7 @@ export const appRoutes: Routes = [
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    MatSlideToggleModule,
     RouterModule,
     RouterModule.forRoot(appRoutes)
   ],

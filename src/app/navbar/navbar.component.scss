@@ -28,6 +28,64 @@
   transition: $transition-fast;
 
   &:hover {
-    transform: rotate(180deg);
+    transform: rotate(90deg);
   }
+}
+
+
+
+
+// Sidenav
+
+.sidenav {
+  background-color: $color-black;
+  color: $color-white;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 300px;
+  padding: $gap-medium;
+  z-index: 1000;
+  transform: translate(100%);
+  transition: $transition-slow;
+
+  &.visible {
+    transform: translate(0);
+  }
+}
+
+.user {
+  display: flex;
+}
+
+.user-picture {
+  height: 70px;
+  width: 70px;
+  background-image: url("../../assets/img/kanye.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-right: $gap-very-small;
+}
+
+.user-name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  span {
+    color: $color-green;
+    font-family: $font-text;
+    font-size: $font-small-size;
+  }
+
+  .user-name {
+    font-family: $font-title;
+    font-weight: 500;
+    font-size: $font-big-size;
+  }
+}
+
+.settings-container {
+  padding-top: $gap-big;
 }

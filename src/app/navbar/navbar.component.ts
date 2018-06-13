@@ -15,5 +15,11 @@ export class NavbarComponent {
       map(result => result.matches)
     );
 
+  private isSidenavVisible = false;
+
   constructor(private breakpointObserver: BreakpointObserver) {}
+
+  public toggleSidenav() {
+    this.isSidenavVisible = !this.isSidenavVisible;
+  }
 }

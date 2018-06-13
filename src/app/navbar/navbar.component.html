@@ -1,18 +1,4 @@
 <mat-sidenav-container class="sidenav-container">
-<!--  <mat-sidenav
-    #drawer
-    class="sidenav"
-    fixedInViewport="true"
-    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="(isHandset$ | async) ? 'over' : 'side'"
-    [opened]="!(isHandset$ | async)">
-    <mat-toolbar color="primary">Menu</mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
-    </mat-nav-list>
-  </mat-sidenav>-->
   <mat-sidenav-content>
     <mat-toolbar color="primary">
       <button
@@ -25,10 +11,34 @@
       </button>
       <img class="navabr-logo" src="../../assets/img/spotify-turnover-logo-full.svg"/>
 
-      <div class="right-buttons">
+      <div class="right-buttons" (click)="toggleSidenav()">
         <img src="../../assets/img/icons/settings.svg">
       </div>
 
     </mat-toolbar>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
+
+<div class="sidenav mat-elevation-z10" [class.visible]="isSidenavVisible">
+
+  <div class="right-buttons" (click)="toggleSidenav()">
+    <img src="../../assets/img/icons/close.svg">
+  </div>
+
+  <div class="user">
+    <div class="user-picture circle"></div>
+
+    <div class="user-name-container">
+      <span>Connected as</span>
+      <div class="user-name">Kanye West</div>
+    </div>
+  </div>
+
+  <div class="settings-container">
+
+    <mat-slide-toggle>Light theme</mat-slide-toggle>
+
+  </div>
+
+</div>
