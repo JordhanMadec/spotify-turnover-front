@@ -38,7 +38,7 @@ export class NavbarComponent implements OnInit {
 
   public setTheme() {
     if (this.lightTheme) {
-      document.body.classList += 'light-theme';
+      document.body.classList.add('light-theme');
       this.cookieService.put('THEME', 'light');
     } else {
       document.body.classList.remove('light-theme');
