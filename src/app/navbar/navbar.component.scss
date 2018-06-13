@@ -1,3 +1,5 @@
+@import "../../assets/theme/variables";
+
 .sidenav-container {
   position: fixed;
   top: 0;
@@ -16,4 +18,16 @@
 .navabr-logo {
   height: 40px;
   margin: 0 auto;
+}
+
+.right-buttons {
+  float: right;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: $transition-fast;
+
+  &:hover {
+    transform: rotate(180deg);
+  }
 }
