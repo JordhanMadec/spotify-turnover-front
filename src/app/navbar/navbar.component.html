@@ -41,7 +41,7 @@
 
   <div class="settings-container">
 
-    <mat-slide-toggle>Light theme</mat-slide-toggle>
+    <mat-slide-toggle (change)="toggleTheme()" [checked]="lightTheme">Light theme</mat-slide-toggle>
 
   </div>
 
