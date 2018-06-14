@@ -5,9 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './recent-artists.component.html',
   styleUrls: ['./recent-artists.component.scss']
 })
-export class PreviousArtistsComponent implements OnInit {
+export class RecentArtistsComponent implements OnInit {
 
-  private recentArtists = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+  recentArtists = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
   constructor() { }
 

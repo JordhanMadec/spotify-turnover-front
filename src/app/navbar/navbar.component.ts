@@ -17,8 +17,8 @@ export class NavbarComponent implements OnInit {
       map(result => result.matches)
     );
 
-  private isSidenavVisible = false;
-  private lightTheme = false;
+  isSidenavVisible = false;
+  lightTheme = false;
 
   constructor(private breakpointObserver: BreakpointObserver, private router: Router, private cookieService: CookieService) {}
 

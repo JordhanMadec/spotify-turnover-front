@@ -8,8 +8,8 @@ import {CookieService} from 'angular2-cookie/core';
 })
 export class HomeComponent implements OnInit {
 
-  private selectePanel = true;
-  private acceptsCookies = true;
+  selectePanel = true;
+  acceptsCookies = true;
 
   constructor(private cookieService: CookieService) { }
 
