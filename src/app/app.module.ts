@@ -6,8 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import {
-  MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule,
-  MatSlideToggle, MatSlideToggleModule
+  MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatSlideToggleModule
 } from '@angular/material';
 import { LoginComponent } from './login/login.component';
 import {RouterModule, Routes} from '@angular/router';
@@ -15,7 +14,11 @@ import { HomeComponent } from './home/home.component';
 import { FollowedArtistsComponent } from './followed-artists/followed-artists.component';
 import { RecentArtistsComponent } from './recent-artists/recent-artists.component';
 import { SuggestedArtistComponent } from './suggested-artist/suggested-artist.component';
-import {CookieService} from "angular2-cookie/core";
+import {CookieService} from "ngx-cookie-service";
+import { HttpClientModule } from '@angular/common/http';
+import { AngularFireModule } from 'angularfire2';
+
+import { environment } from '../environments/environment';
 
 export const appRoutes: Routes = [
   {
@@ -46,6 +49,7 @@ export const appRoutes: Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
@@ -54,9 +58,12 @@ export const appRoutes: Routes = [
     MatListModule,
     MatSlideToggleModule,
     RouterModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    AngularFireModule.initializeApp(environment.firebase)
   ],
-  providers: [CookieService],
+  providers: [
+    CookieService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

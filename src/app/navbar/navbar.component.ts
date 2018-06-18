@@ -3,7 +3,7 @@ import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/l
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import {Router} from '@angular/router';
-import {CookieService} from 'angular2-cookie/core';
+import {CookieService} from 'ngx-cookie-service';
 
 @Component({
   selector: 'navbar',
@@ -39,10 +39,10 @@ export class NavbarComponent implements OnInit {
   public setTheme() {
     if (this.lightTheme) {
       document.body.classList.add('light-theme');
-      this.cookieService.put('THEME', 'light');
+      this.cookieService.set('THEME', 'light');
     } else {
       document.body.classList.remove('light-theme');
-      this.cookieService.put('THEME', 'dark');
+      this.cookieService.set('THEME', 'dark');
     }
   }
 

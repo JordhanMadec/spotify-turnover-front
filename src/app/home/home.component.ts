@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {CookieService} from 'angular2-cookie/core';
+import {CookieService} from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-home',
@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   }
 
   public acceptCookies() {
-    this.cookieService.put('COOKIES_ACCEPTED', 'true');
+    this.cookieService.set('COOKIES_ACCEPTED', 'true');
     this.acceptsCookies = true;
   }
 

@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/spotify-turnover-front",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
