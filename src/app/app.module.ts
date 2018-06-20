@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularFireModule } from 'angularfire2';
 
 import { environment } from '../environments/environment';
+import { TurnoverApiService } from './services/turnover-api.service';
 
 export const appRoutes: Routes = [
   {
@@ -62,7 +63,8 @@ export const appRoutes: Routes = [
     AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [
-    CookieService
+    CookieService,
+    TurnoverApiService,
   ],
   bootstrap: [AppComponent]
 })
